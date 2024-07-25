@@ -33,7 +33,7 @@ class VectorDB:
     def load_vector(self,path:str='database')->None:
         with open(f"{path}/vectors.json", 'r', encoding='utf-8') as f:
             self.vectors = json.load(f)
-        with open(f"{path}/document.json", 'r', encoding='utf-8') as f:
+        with open(f"{path}/documents.json", 'r', encoding='utf-8') as f:
             self.document = json.load(f)
     
     #get cosine similarity
